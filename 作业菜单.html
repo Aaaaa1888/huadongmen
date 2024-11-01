@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单</title>
+    <style>
+        .yijicaidan>li{
+            list-style: none;
+            background-color: #cdfccd;
+            float:column;
+            margin: 15px 0px;
+            width: 80px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            position: relative;
+
+        }
+        a{
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+        }
+        .yijihezi{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .erjihezi{
+            position: absolute;
+            top: 0;
+            left: 100px;
+            background-color: #c9f7f8;
+            width: 120px;
+            height: 200px;
+            border-radius: 20px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .erjicaidan>li{
+           list-style: none;
+           margin: 30px 10px;
+           display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .erjicaidan{
+            padding: 0px;
+        }
+        .yijicaidan>li:hover>.erjihezi{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="yijihezi">
+        <ul class="yijicaidan">
+            <li>
+                <a href="">荤菜</a>
+                <div class="erjihezi">
+                    <ul class="erjicaidan">
+                        <li><a href="">咖喱炸虾</a></li>
+                        <li><a href="">三文鱼料理</a></li>
+                        <li><a href="">牛肉可乐饼</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="">素菜</a>
+                <div class="erjihezi">
+                    <ul class="erjicaidan">
+                        <li><a href="">手撕包菜</a></li>
+                        <li><a href="">酸辣土豆丝</a></li>
+                        <li><a href="">清炒莲藕</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="">凉菜</a>
+                <div class="erjihezi">
+                    <ul class="erjicaidan">
+                        <li><a href="">凉拌黄瓜</a></li>
+                        <li><a href="">酸辣鸡爪</a></li>
+                        <li><a href="">凉拌豆腐</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
